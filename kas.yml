@@ -1,0 +1,21 @@
+header:
+  version: 10
+
+repos:
+  poky:
+    url: "git://git.yoctoproject.org/poky.git"
+    refspec: "scarthgap"
+  meta-openembedded:
+    url: "git://git.openembedded.org/meta-openembedded.git"
+    refspec: "scarthgap"
+  meta-rockchip:
+    url: "https://github.com/radxa/meta-rockchip.git"
+    refspec: "master"
+  my-custom-layer:
+    url: "https://github.com/myuser/meta-rock2f.git"
+    refspec: "main"
+
+machine: "rock-2f"
+distro: "poky"
+target:
+  - "core-image-minimal"
