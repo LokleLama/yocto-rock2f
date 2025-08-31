@@ -16,7 +16,7 @@ sudo apt-get install -y \
      gawk wget git-core diffstat unzip texinfo gcc \
      build-essential chrpath socat cpio \
      python3 python3-pip python3-pexpect \
-     python3-git python3-jinja2 pylint3 \
+     python3-git python3-jinja2 python3.12-venv pylint3 \
      xz-utils debianutils iputils-ping \
      libegl1-mesa libsdl1.2-dev xterm zstd lz4
 ```
@@ -24,7 +24,9 @@ sudo apt-get install -y \
 ### Install kas
 
 ```bash
-sudo pip3 install kas
+python3 -m venv .venv
+source .venv/bin/activate
+pip3 install kas
 kas --version
 ```
 
