@@ -1,5 +1,5 @@
 header:
-  version: 10
+  version: 1
 
 repos:
   poky:
@@ -14,8 +14,6 @@ repos:
   meta-rock2f:
     url: "git@github.com:LokleLama/meta-rock2f.git"
     refspec: "kirkstone"
-    mirrors:
-      - "https://github.com/LokleLama/meta-rock2f.git"
 
 machine: "rock-2f"
 distro: "poky"
