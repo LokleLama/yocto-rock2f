@@ -3,16 +3,30 @@ header:
 
 repos:
   poky:
-    url: "git://git.yoctoproject.org/poky.git"
+    #url: "git://git.yoctoproject.org/poky.git"
+    url: "https://git.yoctoproject.org/git/poky"
     refspec: "kirkstone"
+    layers:
+      meta:
+      meta-poky:
+      meta-skeleton:
+      meta-yocto-bsp:
   meta-openembedded:
-    url: "git://git.openembedded.org/meta-openembedded.git"
+    #url: "git://git.openembedded.org/meta-openembedded.git"
+    url: "https://git.openembedded.org/meta-openembedded"
     refspec: "kirkstone"
+    layers:
+      meta-oe:
+      meta-networking:
+      meta-python:
+      meta-multimedia:
+      meta-filesystems:
   meta-rockchip:
     url: "https://github.com/radxa/meta-rockchip.git"
     refspec: "kirkstone"
   meta-rock2f:
-    url: "git@github.com:LokleLama/meta-rock2f.git"
+    #url: "git@github.com:LokleLama/meta-rock2f.git"
+    url: "https://github.com/LokleLama/meta-rock2f.git"
     refspec: "kirkstone"
 
 machine: "rock-2f"
